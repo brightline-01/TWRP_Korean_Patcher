@@ -6,7 +6,7 @@ set BASEDIR=%~dp0
 set INPUT_DIR=%BASEDIR%input_twrp_tar
 set WORKSPACE=%BASEDIR%workspace
 set "TWRP_TAR="
-set TWRES=%WORKSPACE%ramdisk\twres
+set TWRES=%WORKSPACE%\ramdisk\twres
 set RES=%BASEDIR%RES
 set "OUTPUT=%BASEDIR%output"
 set "ORIG_TAR="
@@ -58,16 +58,14 @@ call "%WORKSPACE%\unpack_twrp.bat" >nul 2>&1
 
 echo [알림] 폰트 패치를 적용합니다...
 if exist "%TWRES%\fonts" (
-    rd /s /q "%TWRES%\fonts" 2>nul
-    if exist "%RES%\fonts" rd /s /q "%RES%\fonts"
-    move "%TWRES%\fonts" "%RES%\" >nul 2>&1
+    rd /s /q "%TWRES%\fonts"
+    xcopy "%RES%\fonts" "%TWRES%\fonts\" /e /i /y
 )
 
 echo [알림] 언어 패치를 적용합니다...
 if exist "%TWRES%\languages" (
-    rd /s /q "%TWRES%\languages" 2>nul
-    if exist "%RES%\languages" rd /s /q "%RES%\languages"
-    move "%TWRES%\languages" "%RES%\" >nul 2>&1
+    rd /s /q "%TWRES%\languages"
+    xcopy "%RES%\languages" "%TWRES%\languages\" /e /i /y
 )
 
 echo [알림] recovery.img를 다시 압축합니다...
