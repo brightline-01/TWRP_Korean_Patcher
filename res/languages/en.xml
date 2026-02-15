@@ -1,14 +1,12 @@
 <?xml version="1.0"?>
-
 <language>
 	<display>Korean</display>
-
 	<resources>
 		<!-- Font overrides - only change these if your language requires special characters -->
-		<resource name="font_l" type="fontoverride" filename="Pretendard-Regular.ttf" scale="100" />
-		<resource name="font_m" type="fontoverride" filename="Pretendard-Regular.ttf" scale="100" />
-		<resource name="font_s" type="fontoverride" filename="Pretendard-Regular.ttf" scale="100" />
-		<resource name="fixed" type="fontoverride" filename="Pretendard-Regular.ttf" scale="100" />
+		<resource name="font_l" type="fontoverride" filename="Pretendard-Regular.ttf" scale="80" />
+		<resource name="font_m" type="fontoverride" filename="Pretendard-Regular.ttf" scale="85" />
+		<resource name="font_s" type="fontoverride" filename="Pretendard-Regular.ttf" scale="90" />
+		<resource name="fixed" type="fontoverride" filename="Pretendard-Regular.ttf" scale="90" />
 
 		<!-- Partition display names -->
 		<string name="system">시스템</string>
@@ -31,7 +29,6 @@
 		<string name="adopted_data">확장 데이터</string>
 		<string name="adopted_storage">확장 저장소</string>
 		<string name="autostorage">저장소</string>
-
 		<!-- GUI XML strings -->
 		<string name="twrp_header">Team Win Recovery Project</string>
 		<string name="twrp_watch_header">TWRP %tw_version%</string>
@@ -50,7 +47,6 @@
 		<string name="tab_screen">화면</string>
 		<string name="tab_vibration">진동</string>
 		<string name="tab_language">언어</string>
-
 		<string name="install_btn">설치</string>
 		<string name="wipe_btn">초기화</string>
 		<string name="backup_btn">백업</string>
@@ -522,7 +518,6 @@
 		<string name="multiuser_warning2">백업/복원 작업이 실패할 수 있습니다!</string>
 		<string name="multiuser_warning_accept">그래도 계속</string>
 		<string name="multiuser_warning_hdr">다중 사용자 경고</string>
-
 		<!-- Various console messages - these consist of user displayed messages, oftentimes errors -->
 		<string name="no_kernel_selinux">커널이 SELinux 컨텍스트 읽기를 지원하지 않습니다.</string>
 		<string name="full_selinux">완전한 SELinux 지원이 제공됩니다.</string>

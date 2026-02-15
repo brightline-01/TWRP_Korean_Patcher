@@ -1,15 +1,12 @@
 <?xml version="1.0"?>
-
 <language>
 	<display>English</display>
-
 	<resources>
 		<!-- Font overrides - only change these if your language requires special characters -->
-		<resource name="font_l" type="fontoverride" filename="Pretendard-Regular.ttf" scale="100" />
-		<resource name="font_m" type="fontoverride" filename="Pretendard-Regular.ttf" scale="100" />
-		<resource name="font_s" type="fontoverride" filename="Pretendard-Regular.ttf" scale="100" />
-		<resource name="fixed" type="fontoverride" filename="Pretendard-Regular.ttf" scale="100" />
-
+		<resource name="font_l" type="fontoverride" filename="Pretendard-Regular.ttf" scale="80" />
+		<resource name="font_m" type="fontoverride" filename="Pretendard-Regular.ttf" scale="85" />
+		<resource name="font_s" type="fontoverride" filename="Pretendard-Regular.ttf" scale="90" />
+		<resource name="fixed" type="fontoverride" filename="Pretendard-Regular.ttf" scale="90" />
 		<!-- Partition display names -->
 		<string name="system">System</string>
 		<string name="system_image">System Image</string>
@@ -31,7 +28,6 @@
 		<string name="adopted_data">Adopted Data</string>
 		<string name="adopted_storage">Adopted Storage</string>
 		<string name="autostorage">Storage</string>
-
 		<!-- GUI XML strings -->
 		<string name="twrp_header">Team Win Recovery Project</string>
 		<string name="twrp_watch_header">TWRP %tw_version%</string>
@@ -50,7 +46,6 @@
 		<string name="tab_screen">SCREEN</string>
 		<string name="tab_vibration">VIBRATION</string>
 		<string name="tab_language">LANGUAGE</string>
-
 		<string name="install_btn">Install</string>
 		<string name="wipe_btn">Wipe</string>
 		<string name="backup_btn">Backup</string>
@@ -522,7 +517,6 @@
 		<string name="multiuser_warning2">Backup/restore operations may fail!</string>
 		<string name="multiuser_warning_accept">Continue Anyway</string>
 		<string name="multiuser_warning_hdr">Multiuser Warning</string>
-
 		<!-- Various console messages - these consist of user displayed messages, oftentimes errors -->
 		<string name="no_kernel_selinux">Kernel does not have support for reading SELinux contexts.</string>
 		<string name="full_selinux">Full SELinux support is present.</string>

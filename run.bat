@@ -58,14 +58,12 @@ call "%WORKSPACE%\unpack_twrp.bat" >nul 2>&1
 
 echo [알림] 폰트 패치를 적용합니다...
 if exist "%TWRES%\fonts" (
-    rd /s /q "%TWRES%\fonts"
-    xcopy "%RES%\fonts" "%TWRES%\fonts\" /e /i /y
+    robocopy "%RES%\fonts" "%TWRES%\fonts" /e
 )
 
 echo [알림] 언어 패치를 적용합니다...
 if exist "%TWRES%\languages" (
-    rd /s /q "%TWRES%\languages"
-    xcopy "%RES%\languages" "%TWRES%\languages\" /e /i /y
+    robocopy "%RES%\languages" "%TWRES%\languages" /e
 )
 
 echo [알림] recovery.img를 다시 압축합니다...
