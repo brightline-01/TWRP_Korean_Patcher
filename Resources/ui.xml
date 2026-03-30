@@ -17,7 +17,7 @@
 		<font name="font_l" filename="Pretendard-Regular.ttf" size="54"/>
 		<font name="font_m" filename="Pretendard-Regular.ttf" size="42"/>
 		<font name="font_s" filename="Pretendard-Regular.ttf" size="36"/>
-		<font name="fixed" filename="DroidSansMono.ttf" size="30"/>
+		<font name="fixed" filename="Pretendard-Regular.ttf" size="30"/>
 
 		<font name="keylabel" filename="Pretendard-Regular.ttf" size="64"/>
 		<font name="keylabel-small" filename="Pretendard-Regular.ttf" size="46"/>
