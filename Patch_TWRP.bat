@@ -90,11 +90,10 @@ if "%TWRP_Type%"=="TAR" (
 
     cd /d "%Temp_DIR%"
 
-    set "Output_TAR=%~dp0%Original_TAR_Name%_Korean.tar"
-    if exist "%Temp_DIR%\vbmeta.img" (
-        tar -cf "%Output_TAR%" recovery.img vbmeta.img
+    if exist "vbmeta.img" (
+        tar -cf "%Output_DIR%\%Original_TAR_Name%_Korean.tar" recovery.img vbmeta.img
     ) else (
-        tar -cf "%Output_TAR%" recovery.img
+        tar -cf "%Output_DIR%\%Original_TAR_Name%_Korean.tar" recovery.img
     )
     cd /d "%~dp0"
     echo [작업] TWRP 파일을 .tar 파일로 다시 압축했습니다.
